@@ -1,0 +1,35 @@
+.money-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-heading {
+}
+
+.profile-description {
+}
+
+.category-image {
+  width: 45px;
+}
+
+.category-heading {
+}
+
+.your-balance {
+  display: flex;
+  background-color: #ecfccb;
+  border: 2px solid #84cc16;
+}
+
+.your-income {
+  display: flex;
+  background-color: #cffafe;
+  border: 2px solid #06b6d4;
+}
+
+.your-expenses {
+  display: flex;
+  background-color: #ede9fe;
+  border: 2px solid #7c3aed;
+}
