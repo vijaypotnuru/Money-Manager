@@ -1,41 +1,47 @@
 import './index.css'
 
 const MoneyDetails = props => {
-  const {yourBalance, yourIncome, yourExpenses} = props
+  const {balanceAmount, incomeAmount, expensesAmount} = props
 
   return (
     <div className="money-details-container">
-      <div className="your-balance">
+      <div className="balance-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/balance-image.png"
-          className="category-image"
           alt="balance"
+          className="details-img"
         />
         <div>
-          <p className="category-heading">Your Balance</p>
-          <p data-testid="balanceAmount">{yourBalance}</p>
+          <p className="details-text">Your Balance</p>
+          <p className="details-money" data-testid="balanceAmount">
+            Rs {balanceAmount}
+          </p>
         </div>
       </div>
-      <div className="your-income">
+      <div className="income-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png"
-          className="category-image"
           alt="income"
+          className="details-img"
         />
         <div>
-          <p className="category-heading">Your Income</p>
-          <p data-testid="incomeAmount">{yourIncome}</p>
+          <p className="details-text">Your Income</p>
+          <p className="details-money" data-testid="incomeAmount">
+            Rs {incomeAmount}
+          </p>
         </div>
       </div>
-      <div className="your-expenses">
+      <div className="expenses-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png"
-          className="category-image"
           alt="expenses"
+          className="details-img"
         />
         <div>
-          <p className="category-heading">Your Expenses</p>
-          <p data-testid="expensesAmount">{yourExpenses}</p>
+          <p className="details-text">Your Expenses</p>
+          <p className="details-money" data-testid="expensesAmount">
+            Rs {expensesAmount}
+          </p>
         </div>
       </div>
     </div>
